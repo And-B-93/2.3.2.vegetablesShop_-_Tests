@@ -1,0 +1,40 @@
+body {
+    background-color: #F3F5FA !important;
+}
+
+#root {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siteName {
+    background-color: #F3F5FA;
+    border-radius: 31px;
+    font-size: 27px;
+    opacity: 90%;
+    padding-left: 12px;
+    font-weight: 100;
+}
+
+.shop {
+    background-color: #54B46A;
+    padding: 0 12px;
+    border-radius: 31px;
+    color: white
+}
+
+.vegetable {
+    margin-right: 10px;
+}

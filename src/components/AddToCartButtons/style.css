@@ -1,0 +1,8 @@
+.addToCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addToCard img {
+    margin-left: 5px;
+}
