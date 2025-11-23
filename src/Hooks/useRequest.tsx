@@ -7,18 +7,17 @@ export default function useRequest(request: () => Promise<any>) {
 
   useEffect(() => {
     setLoading(true);
-    setError(""); // Сбрасываем ошибку при новом запросе
+    setError("");
 
     const timer = setTimeout(() => {
       request()
         .then((response) => setData(response))
         .catch((error) => setError(error.message || "Произошла ошибка"))
         .finally(() => setLoading(false));
-    }, 1000);
+    }, 0);
 
-    // Очистка таймера при размонтировании компонента
     return () => clearTimeout(timer);
-  }, []); // Добавляем request в зависимости
+  }, []);
 
   return [data, loading, error];
 }
